@@ -1,14 +1,21 @@
 <template>
   <div id="app">
-    <!-- <img src="./assets/logo.png"> -->
-    <h1> sfgsfgsfgd </h1>
+    <!-- <h1>เกิดอะไร</h1> -->
+    <Profile></Profile>
+    <GridImages></GridImages>
     <router-view/>
   </div>
 </template>
 
 <script>
+import Profile from '@/components/Profile'
+import GridImages from '@/components/GridImages'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Profile,
+    GridImages
+  }
 }
 </script>
 
