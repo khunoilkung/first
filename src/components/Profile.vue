@@ -1,4 +1,3 @@
-
 <template>
     <div class="ui segment">
         <img class="ui wireframe image" src="https://semantic-ui.com/images/wireframe/media-paragraph.png">
@@ -17,4 +16,5 @@ export default {
 </script>
 
 <style>
+
 </style>

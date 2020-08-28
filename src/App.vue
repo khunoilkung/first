@@ -1,20 +1,31 @@
 <template>
   <div id="app">
-    <!-- <h1>เกิดอะไร</h1> -->
-    <Profile></Profile>
-    <GridImages></GridImages>
+    <div class="ui inverted segment">
+      <div class="ui inverted secondary pointing menu">
+        <a class="active item">
+          Home
+        </a>
+        <a class="item" :href="contactLink">
+          Contact
+        </a>
+        <a class="item">
+          Friends
+        </a>
+      </div>
+    </div>
+
     <router-view/>
+
   </div>
 </template>
 
 <script>
-import Profile from '@/components/Profile'
-import GridImages from '@/components/GridImages'
 export default {
   name: 'App',
-  components: {
-    Profile,
-    GridImages
+  data: function() {
+    return {
+      contactLink: '/contact'
+    }
   }
 }
 </script>
@@ -26,6 +37,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 2em;
+  margin-top: 0;
 }
 </style>
